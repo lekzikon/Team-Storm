@@ -6,8 +6,6 @@
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    color: black;
-    
     
 }
 nav{
@@ -23,6 +21,7 @@ nav img{
 .nav-links a{
     margin-left: 30px;
     text-decoration: none;
+    color: #000;
 }
 .nav-links a:nth-child(1){
     color: #FF6C11;
@@ -128,7 +127,7 @@ form h1{
 
 }
 section img{
-        height: 650px;
+        height: 690px;
         width: 50%;
     
 }
@@ -164,4 +163,52 @@ button[type="submit"]{
     border-radius: 10px;
     border: #E7332B;
     color: #fff;
+}
+.section-two-text{
+    padding: 50px;
+}
+.section-two img{
+        float: right;
+        width: 40%;
+        height: 400px;
+        margin: 50px;
+    
+}
+.aside-two img{
+    float: right;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    margin: 60px;
+}
+footer{
+    background-color:#E7332B ;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+.footer-menu ul,
+.footer-media ul,
+.footer-sign ul{
+    list-style-type: none;
+}
+.footer-menu ul li,
+.footer-media ul li,
+.footer-sign ul li{
+    padding-top: 10px;
+}
+footer button{
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /* border: 1px solid #E7332B; */
+}
+footer button:nth-child(1){
+    background-color:white ;
+}
+footer button:nth-child(2){
+    background-color:#E7332B ;
 }
