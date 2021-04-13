@@ -34,7 +34,7 @@ nav img{
     border-radius: 10px;
 }
 .bg-grey{
-    background-color:#F7F7F7;
+    background-color:#e9e6e6;
 }
 .section-one{
     padding: 20px;
@@ -126,6 +126,9 @@ form h1{
     text-align: center;
 
 }
+.bg-started{
+    background-color: white;
+}
 section img{
         height: 690px;
         width: 50%;
@@ -167,11 +170,15 @@ button[type="submit"]{
 .section-two-text{
     padding: 50px;
 }
-.section-two img{
-        float: right;
-        width: 40%;
-        height: 400px;
-        margin: 50px;
+.section-two-img img{
+    position: relative;
+    top: 90px;
+    float: right;
+    width: 30%;
+    padding: 40px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 20px;
     
 }
 .aside-two img{
@@ -199,16 +206,74 @@ footer{
 .footer-sign ul li{
     padding-top: 10px;
 }
-footer button{
-    padding: 10px;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    /* border: 1px solid #E7332B; */
+/* MEDIA QUERIES
+for smaller devices like phones */
+@media only screen and (max-width: 768px){
+    nav {
+        display: flex;
+        
+        padding: 10px 0;
+    }
+    nav img{
+        padding-left: 5px;
+    }
+    .nav-links a{
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    .nav-links a:nth-child(4) {
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .relative{
+        display: none;
+    }
+    .section-one{
+        width: 100%;
+    }
+    .section-one h1{
+        font-size: 35px;
+        line-height: 40px; 
+    }
+    .section-one p {
+        padding: 20px;
+        letter-spacing: 2px;
+        font-family: Montserrat;
+        font-size: 15px;
+        letter-spacing: 0em;
+    }
+    .buttons button:nth-child(1),
+    .buttons button:nth-child(2){
+        padding: 10px;
+        margin-right: 1px;
+        font-size: 10px;
 }
-footer button:nth-child(1){
-    background-color:white ;
+.aside img {
+    height: 250px;
+    width: 100%;
+    border: 0;
+    margin-top: 1px;
+    
 }
-footer button:nth-child(2){
-    background-color:#E7332B ;
+.section-two-img img{
+    display: none;
+}
+section img {
+    height: 200px;
+    width: 100%
+}
+form{
+        width: 100%;
+        height: 300px;
+        padding: 30px;
+}
+form h1 {
+    padding: 1px;
+    font-size: 30px;
+}
+footer{
+    position: relative;
+    top: 700px;
+    height: 200px;
+}
 }
